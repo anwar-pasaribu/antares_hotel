@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.grand_antares.KamarDetails" >
+
+    <TextView
+        android:id="@+id/textView_details_deskripsi_kamar"
+        android:layout_width="640dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame_data_kamar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:layout_marginTop="30dp"
+        android:text="Deskripsi kamar yang mungkin akan membantu calon pelanggan utk memeilih kamar "
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:id="@+id/frame_data_kamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/imageView_gambar_header_kamar"
+            android:layout_width="640dp"
+            android:layout_height="200dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/business" />
+
+        <TextView
+            android:id="@+id/textView_details_tipe_kamar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:text="Tipe Kamar"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView_details_harga_kamar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="8dp"
+            android:text="IDR 500,000"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+</RelativeLayout>
